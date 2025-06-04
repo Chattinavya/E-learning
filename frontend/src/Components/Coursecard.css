@@ -1,0 +1,151 @@
+.bytexl-card {
+  background: #fff8f2;
+  border: 1px solid #5f9aff;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%;
+  margin: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+.bytexl-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.date {
+  font-size: 12px;
+  color: #888;
+}
+
+.desc {
+  margin: 12px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.course-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.start-button {
+  background-color: #312eff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.start-button:hover {
+  background-color: #201cff;
+}
+
+.start-button:active {
+  transform: scale(0.98);
+}
+
+.progress-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #555;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: #312eff;
+  width: 0%;
+  transition: width 0.3s ease-in-out;
+}
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.courses-page {
+  margin-left: 220px; /* Same as sidebar width */
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.courses-page h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .courses-page {
+    padding: 1rem;
+  }
+
+  .bytexl-card {
+    width: 100%;
+  }
+}
+.course-icon {
+  display: flex;
+  align-items: center;
+}
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  min-width: 240px;
+  background-color: #fff;
+  height: 100vh;
+  border-right: 1px solid #ccc;
+}
+
+/* Layout container */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/* Courses page */
+.courses-page {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+
+
+

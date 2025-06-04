@@ -1,0 +1,151 @@
+.verbal-container {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  padding: 20px;
+}
+
+.verbal-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  color: #004085;
+}
+
+.verbal-nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.verbal-link {
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.verbal-link:hover {
+  color: #0056b3;
+}
+
+.section-container {
+  padding: 10px 15px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #0069d9;
+  border-bottom: 2px solid #0069d9;
+  padding-bottom: 6px;
+}
+
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.module-card {
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+  padding: 20px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.module-card:hover {
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.15);
+  transform: translateY(-3px);
+}
+
+.module-card.selected {
+  border-color: #007bff;
+  background: #e9f2ff;
+  box-shadow: 0 4px 15px rgb(0 123 255 / 0.4);
+}
+
+.module-title {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  color: #004085;
+}
+
+.module-desc {
+  font-size: 1rem;
+  color: #495057;
+}
+
+.module-details {
+  margin-top: 30px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+}
+
+.question-block {
+  margin-bottom: 25px;
+  background: #f1f3f5;
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+.passage {
+  font-style: italic;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.question-text {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #212529;
+}
+
+.options-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.options-list li {
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  background-color: #e9ecef;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.options-list li:hover {
+  background-color: #ced4da;
+}
+
+.correct-answer {
+  background-color: #0bf942; /* Softer green */
+  color: #155724;
+  font-weight: 600;
+  border: 1px solid #0bf742;
+}
+
+.wrong-answer {
+  background-color: #f50a1e; /* Softer red */
+  color: #ef1026;
+  font-weight: 600;
+  border: 1px solid #fb0d25;
+}
+.correct-answer::before {
+  content: "✔ ";
+  color: #28a745;
+}
+
+.wrong-answer::before {
+  content: "✖ ";
+  color: #dc3545;
+}
+

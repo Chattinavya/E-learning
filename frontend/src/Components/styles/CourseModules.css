@@ -1,0 +1,107 @@
+/* Container spacing */
+.modules-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-left: 240px; /* Space for sidebar */
+  transition: margin-left 0.3s ease;
+}
+
+/* Title */
+.heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+/* Module Card Layout */
+.module-card {
+  background-color: #f9fafb;
+  border-left: 5px solid #007bff;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+}
+
+.module-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Module text */
+.module-text {
+  flex: 1;
+  min-width: 200px;
+}
+
+.module-text strong {
+  font-size: 1.25rem;
+  color: #222;
+}
+
+.module-text p {
+  margin: 0.5rem 0 0;
+  color: #555;
+}
+
+/* Start button */
+.start-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.start-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Highlighted card */
+.highlighted {
+  border-left-color: #28a745;
+  background-color: #e6f4ea;
+}
+
+/* Sidebar collapsed (optional toggle) */
+.sidebar-closed .modules-container {
+  margin-left: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .modules-container {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .module-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .start-button {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .module-text strong {
+    font-size: 1rem;
+  }
+}

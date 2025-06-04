@@ -1,0 +1,53 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+
+* {
+  text-align: match-parent;
+  text-align: -webkit-match-parent;
+}
+
+.main-content {
+  transition: margin-left 0.3s ease;
+  margin-left: 0; /* default no sidebar */
+  padding: 20px;
+}
+
+.main-content.sidebar-open {
+  margin-left: 250px; /* or whatever sidebar width is */
+}
+
+
+@media (max-width: 768px) {
+  .main-content,
+  .main-content.sidebar-open {
+    margin-left: 0;
+  }
+}
+.quiz-box {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+.quiz-box h2 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+.quiz-box ul {
+  list-style-type: none;
+  padding: 0;
+}
+.quiz-box li:hover {
+  background: #dbeafe;
+}
+

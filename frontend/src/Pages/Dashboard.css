@@ -1,0 +1,32 @@
+.dashboard-wrapper {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.topic-card {
+  padding: 30px;
+  color: #fff;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.topic-card:hover {
+  transform: translateY(-5px);
+}

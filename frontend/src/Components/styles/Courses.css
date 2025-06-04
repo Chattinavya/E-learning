@@ -1,0 +1,42 @@
+/* Courses.module.css */
+
+.coursesContainer {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #007acc;
+  font-weight: bold;
+}
+
+.courseCard {
+  border: 2px solid #007acc;
+  border-radius: 8px;
+  margin: 15px 0;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f0f8ff;
+}
+
+.courseCard:hover {
+  background-color: #d0e7ff;
+  box-shadow: 0 4px 12px rgba(0, 122, 204, 0.4);
+}
+
+.courseTitle {
+  font-size: 1.5rem;
+  color: #004a99;
+  margin-bottom: 10px;
+}
+
+.courseDescription {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.4;
+}
