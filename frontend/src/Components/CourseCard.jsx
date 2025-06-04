@@ -1,5 +1,5 @@
 // CourseCard.jsx
-import './CourseCard.css';
+import './Coursecard.css'
 import { FaLaptopCode, FaFileAlt } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
