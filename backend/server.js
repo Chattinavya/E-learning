@@ -1,6 +1,7 @@
 const express=require('express')
 const app=express()
 const dotenv=require('dotenv')
+const cors = require('cors')
 dotenv.config()
 
 const mongoose=require('mongoose')
@@ -14,8 +15,8 @@ const authenticate=require('./middleware/authmiddleware')
 app.use(express.json());
 const corsOptions = {
   origin: [
-    'https://realtimechatapp-opal.vercel.app', // Your Vercel frontend
-    'https://realtimechat-1-gpm1.onrender.com', // Your Render backend
+    'https://e-learning-a1p9.vercel.app/', // Your Vercel frontend
+    'https://e-learning-08m7.onrender.com', // Your Render backend
     'http://localhost:5173' // For local development
   ],
   credentials: true,
